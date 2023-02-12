@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneUp</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="./CoverImages/tuneup.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/952d9cc6d5.js" crossorigin="anonymous"></script>
+</head>
+<body onload="removeLoader();">
+    <div class="loader">
+        <img src="./CoverImages/playing.gif" height="100px" width="100px">
+    </div>
+    <div class="div-search">
+        <div class="div-search-input-icon"><input type="text" placeholder="Type song name" id="searchkey"><i class="fa fa-angle-up"></i></div>
+        <div class="search-results"></div>
+    </div>
+    <div class="header-main">
+        <span>TuneUp</span><img src="./CoverImages/tuneup.jpg" height="50px" ><i style="margin-left:45%;" class="fa-regular fa-user"></i><i style="margin-left:3%;" class="fa fa-search"></i>
+    </div>
+    <div class="container-main">
+        <div>
+        <h3>Your Favourite Music</h3>
+        <div class="fav-song-container">
+            <!-- <div class="song-item"><img  src="./CoverImages/sog-cover1.jpg" height="150" width="130" class="songcover"/><p class="nams">Kala chashma</p></div>
+            <div class="song-item"><img  src="./CoverImages/sng-cover3.jpg" height="150" width="130" class="songcover"/><p class="nams">Kala chashma</p></div>
+            <div class="song-item"><img  src="./CoverImages/ong-cover4.jpg" height="150" width="130" class="songcover"/><p class="nams">Kala chashma</p></div>
+            <div class="song-item"><img  src="./CoverImages/uneup.jpg" height="150" width="130" class="songcover"/><p class="nams">Kala chashma</p></div>
+        </div> -->
+        </div>
+        <div>
+            <h3>Your Favourite Artist</h3>
+            <div class="fav-artist-container">
+                <div class="artist-item"><img src="./ArtistImage/singer3.jpg" height="98" width="100"/><p>Imran Khan</p></div>
+                <div class="artist-item"><img src="./ArtistImage/singer2.jpg" height="98" width="100"/><p>Ramya Ramkumar</p></div>
+                <div class="artist-item"><img src="./ArtistImage/singer1.jpg" height="98" width="100"/><p>Shreya Ghoshal</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-player">
+        <div class="coverimage-mini"><img id="cover-image-mini" alt="song-cover" src="./CoverImages/song-cover1.jpg" height="50" width="50" /></div><div class="song-name-mini"><p class="song-name-mini-p">Teri khair mangdi(Female)</p><img  alt="song-cover" class="music-playing" src="./CoverImages/playing.gif" height="30" width="30" /></div><div class="play-pause-mini"><i class="fa fa-play fa-2x pp-m-btn"></i></div>
+    </div>
+    <div class="main-player">
+        <div class="main-player-head">   
+            <i class="fa fa-angle-down"></i><span>Your Favourite Music</span><i class="fa fa-ellipsis-v"></i>
+        </div>
+        <div class="main-player-coverimg">
+            <img id="main-cover-img" alt="cover-img" src="./CoverImages/song-cover1.jpg"/>
+        </div>
+        <div class="main-song-details">
+            <div class="nameloader"><span id="main-name">Teri Khair Mangdi</span>
+            <img src="./CoverImages/playing.gif"  width="50" height="50" alt="music-playing" class="music-playing" /></div>
+            <span class="artist-name">Female Singer</span>
+        </div>        
+        <div class="main-controller-seek">
+            <input type="range" value="0" min="0" max="100" class="seekbar" />
+        </div>
+        <div class="main-controller-next-prev">
+            <i  class="fa fa-step-backward" id="prev-btn"></i>
+            <i class="fa fa-play-circle pp-mn-btn"  style="font-size:55px"></i>
+            <i class="fa fa-step-forward" id="next-btn"></i>
+        </div>
+    </div>
+    <script src="./Scripts/script.js"></script>
+</body>
+</html>
