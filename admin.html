@@ -14,7 +14,23 @@
         <span>TuneUp</span><img src="./CoverImages/tuneup.jpg" height="50px" ><i style="margin-left:55%;" class="fa fa-sign-out"></i>
     </div>
     <div class="main-container">
-        <h3>Admin Panel</h3>
+        <div class="main-container-head">
+        <h3>Upload a song</h3>
+        </div>
+        <div class="main-container-content">
+            <div class="main-container-content-input">
+            <input type="file" style="display: none;" id="file-choose-song" >
+            <input type="file" style="display: none;" id="file-choose-cover">
+            <input type="text" style="display:none;" id="cover-name">
+            <label>Song Name</label><br>
+            <input type="text" placeholder="Enter song name" id="song-name"><br>
+            <label>Artist Name</label><br>
+            <input type="text" placeholder="Enter artist name" id="artist-name"><br>
+            <button class="file-choose-btn">Song<i style="margin-left:10px;" class="fa fa-music"></i></button><button class="file-choose-btn" style="margin-left:20px;">Cover<i style="margin-left:10px;" class="fa fa-image"></i></button><br><br>
+            <button class="upload-button" style="width:85vw;">Upload<i style="margin-left:10px;" class="fa fa-upload"></i></button>
+            </div>
+        </div>
     </div>
+    <script src="./Scripts/admin.js"></script>
 </body>
 </html>
